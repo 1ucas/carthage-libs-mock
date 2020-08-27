@@ -1,0 +1,26 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "95f908942d13793718e7583a014205acc433220b",
+  "iOS" : [
+    {
+      "hash" : "111764aef6b4a1a9a2d0e92a9ae340869afb004d4dafb5e053f14ceaddffe2e5",
+      "name" : "PaymentQRCode",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    },
+    {
+      "hash" : "f62882f60cc881470dd97317a3b2da4f8e11c4d6db9b641470f02a360e851cd6",
+      "name" : "DPVLib",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}
