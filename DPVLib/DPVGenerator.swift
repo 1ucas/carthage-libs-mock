@@ -10,7 +10,7 @@ import Foundation
 
 open class DPVGenerator {
     
-    public let instance = DPVGenerator()
+    public static let instance = DPVGenerator()
     
     open var lastGeneratedDPVInfo:DPVInfo?
     
