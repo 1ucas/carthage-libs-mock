@@ -12,6 +12,8 @@
 		A04EF28E24F752A000A3FFD6 /* DPVLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A04EF28C24F752A000A3FFD6 /* DPVLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A04EF29324F752E500A3FFD6 /* PaymentQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04EF29224F752E500A3FFD6 /* PaymentQRCode.swift */; };
 		A04EF29524F7555500A3FFD6 /* DPVGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04EF29424F7555500A3FFD6 /* DPVGenerator.swift */; };
+		A04EF29F24F7612100A3FFD6 /* QRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = A04EF29D24F7612100A3FFD6 /* QRCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04EF2A424F7612F00A3FFD6 /* QRMockCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04EF2A324F7612F00A3FFD6 /* QRMockCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		A04EF28D24F752A000A3FFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A04EF29224F752E500A3FFD6 /* PaymentQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentQRCode.swift; sourceTree = "<group>"; };
 		A04EF29424F7555500A3FFD6 /* DPVGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPVGenerator.swift; sourceTree = "<group>"; };
+		A04EF29B24F7612100A3FFD6 /* QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04EF29D24F7612100A3FFD6 /* QRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCode.h; sourceTree = "<group>"; };
+		A04EF29E24F7612100A3FFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A04EF2A324F7612F00A3FFD6 /* QRMockCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRMockCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A04EF29824F7612100A3FFD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +72,7 @@
 				A04EF26F24F7507A00A3FFD6 /* TRBFrameworksMock */,
 				A04EF27E24F7525800A3FFD6 /* PaymentQRCode */,
 				A04EF28B24F752A000A3FFD6 /* DPVLib */,
+				A04EF29C24F7612100A3FFD6 /* QRCode */,
 				A04EF26E24F7507A00A3FFD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +83,7 @@
 				A04EF26D24F7507A00A3FFD6 /* TRBFrameworksMock.framework */,
 				A04EF27D24F7525800A3FFD6 /* PaymentQRCode.framework */,
 				A04EF28A24F752A000A3FFD6 /* DPVLib.framework */,
+				A04EF29B24F7612100A3FFD6 /* QRCode.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +117,16 @@
 			path = DPVLib;
 			sourceTree = "<group>";
 		};
+		A04EF29C24F7612100A3FFD6 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				A04EF29D24F7612100A3FFD6 /* QRCode.h */,
+				A04EF29E24F7612100A3FFD6 /* Info.plist */,
+				A04EF2A324F7612F00A3FFD6 /* QRMockCode.swift */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -126,6 +151,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04EF28E24F752A000A3FFD6 /* DPVLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04EF29624F7612100A3FFD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04EF29F24F7612100A3FFD6 /* QRCode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +219,24 @@
 			productReference = A04EF28A24F752A000A3FFD6 /* DPVLib.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A04EF29A24F7612100A3FFD6 /* QRCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A04EF2A024F7612100A3FFD6 /* Build configuration list for PBXNativeTarget "QRCode" */;
+			buildPhases = (
+				A04EF29624F7612100A3FFD6 /* Headers */,
+				A04EF29724F7612100A3FFD6 /* Sources */,
+				A04EF29824F7612100A3FFD6 /* Frameworks */,
+				A04EF29924F7612100A3FFD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRCode;
+			productName = QRCode;
+			productReference = A04EF29B24F7612100A3FFD6 /* QRCode.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +254,10 @@
 						LastSwiftMigration = 1150;
 					};
 					A04EF28924F752A000A3FFD6 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					A04EF29A24F7612100A3FFD6 = {
 						CreatedOnToolsVersion = 11.5;
 						LastSwiftMigration = 1150;
 					};
@@ -224,6 +279,7 @@
 				A04EF26C24F7507A00A3FFD6 /* TRBFrameworksMock */,
 				A04EF27C24F7525800A3FFD6 /* PaymentQRCode */,
 				A04EF28924F752A000A3FFD6 /* DPVLib */,
+				A04EF29A24F7612100A3FFD6 /* QRCode */,
 			);
 		};
 /* End PBXProject section */
@@ -244,6 +300,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A04EF28824F752A000A3FFD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04EF29924F7612100A3FFD6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,6 +336,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04EF29524F7555500A3FFD6 /* DPVGenerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A04EF29724F7612100A3FFD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04EF2A424F7612F00A3FFD6 /* QRMockCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,16 +481,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TRBFrameworksMock/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.manobray.TRBFrameworksMock;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -434,16 +508,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TRBFrameworksMock/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.manobray.TRBFrameworksMock;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -459,18 +536,20 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PaymentQRCode/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.manobray.PaymentQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -486,17 +565,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PaymentQRCode/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.manobray.PaymentQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -518,7 +599,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.manobray.DPVLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -547,8 +628,65 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.manobray.DPVLib;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A04EF2A124F7612100A3FFD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XCKQJC262X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QRCode/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.manobray.QRCode;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A04EF2A224F7612100A3FFD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XCKQJC262X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QRCode/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.manobray.QRCode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -592,6 +730,15 @@
 			buildConfigurations = (
 				A04EF29024F752A000A3FFD6 /* Debug */,
 				A04EF29124F752A000A3FFD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A04EF2A024F7612100A3FFD6 /* Build configuration list for PBXNativeTarget "QRCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04EF2A124F7612100A3FFD6 /* Debug */,
+				A04EF2A224F7612100A3FFD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
