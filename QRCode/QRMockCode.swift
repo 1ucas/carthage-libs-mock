@@ -10,4 +10,6 @@ import Foundation
 
 open class QRMockCode {
     
+    public init() {}
+    
 }
