@@ -8,25 +8,25 @@
 
 import Foundation
 
-public class DPVGenerator {
+open class DPVGenerator {
     
-    let instance = DPVGenerator()
+    public let instance = DPVGenerator()
     
-    var lastGeneratedDPVInfo:DPVInfo?
+    open var lastGeneratedDPVInfo:DPVInfo?
     
-    public func getID(url: String, sessionId: String, operationId:String, successCallback: @escaping(_ success:String) -> Void, errorCallback: @escaping(_ success:String) -> Void) {
+    open func getID(url: String, sessionId: String, operationId:String, successCallback: @escaping(_ success:String) -> Void, errorCallback: @escaping(_ success:String) -> Void) {
         successCallback("")
     }
     
     
 }
 
-public class DPVInfo {
-    let Latitude:String
-    let Longitude:String
-    let IdentifierForVendor:String
+open class DPVInfo {
+    public let Latitude:String
+    public let Longitude:String
+    public let IdentifierForVendor:String
     
-    init(Latitude:String, Longitude:String, IdentifierForVendor:String) {
+    public init(Latitude:String, Longitude:String, IdentifierForVendor:String) {
         self.Latitude = Latitude
         self.Longitude = Longitude
         self.IdentifierForVendor = IdentifierForVendor

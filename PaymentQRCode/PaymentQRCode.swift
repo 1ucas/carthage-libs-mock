@@ -8,30 +8,32 @@
 
 import Foundation
 
-public class PaymentQRCode {
+open class PaymentQRCode {
     
-    public func generateKeyPair(_ cpf: String, _ pin: String) -> KeyPair? {
+    open func generateKeyPair(_ cpf: String, _ pin: String) -> KeyPair? {
         return KeyPair(publicKey: "aodjsadoijsoidjsiojdadosjdo")
     }
     
-    public func isPinCorrect(_ cpf: String, _ pin: String) -> Bool {
+    open func isPinCorrect(_ cpf: String, _ pin: String) -> Bool {
         return true
     }
     
-    public func keyPairExists(_ cpf: String) -> Bool {
+    open func keyPairExists(_ cpf: String) -> Bool {
         return true
     }
     
-    public func destroyKey(_ key: String) {
+    open func destroyKey(_ key: String) {
         return
     }
+    
+    public init() {}
 }
 
-public class KeyPair {
+open class KeyPair {
     
-    let publicKey:String
+    public let publicKey:String
     
-    init(publicKey:String) {
+    public init(publicKey:String) {
         self.publicKey = publicKey
     }
     
